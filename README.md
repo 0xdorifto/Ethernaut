@@ -4,34 +4,34 @@ Hello! In this repo you can checkout my solutions to the [Ethernaut CTF challeng
 
 ## Challenges
 
-1. Fallback
-2. Fallout
-3. Coin Flip
-4. Telephone
-5. Token
-6. Delegation
-7. Force
-8. Vault
-9. King
-10. Re-entrancy
-11. Elevator
-12. Privacy
-13. Gatekeeper One
-14. Gatekeeper Two
-15. Naught Coin
-16. Preservation
-17. Recovery
-18. Magic Number
-19. Alien Codex
-20. Denial
-21. Shop
-22. Dex
-23. Dex 2
-24. Puzzle Wallet
-25. Motorbike
-26. DoubleEntryPoint
-27. Good Samaritan
-28. Gatekeeper Three
+1. [Fallback](contracts/fallback)
+2. [Fallout](contracts/fallout)
+3. [Coin Flip](contracts/coin-flip)
+4. [Telephone](contracts/telephone)
+5. [Token](contracts/token)
+6. [Delegation](contracts/delegation)
+7. [Force](contracts/force)
+8. [Vault](contracts/vault)
+9. [King](contracts/king)
+10. [Re-entrancy](contracts/re-entrancy)
+11. [Elevator](contracts/elevator)
+12. [Privacy](contracts/privacy)
+13. [Gatekeeper One](contracts/gatekeeper-one)
+14. [Gatekeeper Two](contracts/gatekeeper-two)
+15. [Naught Coin](contracts/naught-coin)
+16. [Preservation](contracts/preservation)
+17. [Recovery](contracts/recovery)
+18. [Magic Number](contracts/magic-number)
+19. [Alien Codex](contracts/alien-codex)
+20. [Denial](contracts/denial)
+21. [Shop](contracts/shop)
+22. [Dex](contracts/dex)
+23. [Dex 2](contracts/dex-2)
+24. [Puzzle Wallet](contracts/puzzle-wallet)
+25. [Motorbike](contracts/motorbike)
+26. [DoubleEntryPoint](contracts/double-entry-point)
+27. [Good Samaritan](contracts/good-samaritan)
+28. [Gatekeeper Three](contracts/gatekeeper-three)
 
 ## Documentation
 
