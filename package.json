@@ -1,0 +1,16 @@
+{
+  "name": "ethernaut",
+  "version": "1.0.0",
+  "description": "Hello! In this repo you can checkout my solutions to the [Ethernaut CTF challenges](https://ethernaut.openzeppelin.com/).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.2",
+    "hardhat": "^2.13.1"
+  }
+}
