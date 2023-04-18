@@ -8,12 +8,10 @@ interface targetInterface {
 }
 
 contract FalloutAttacker {
-    address private targetAddress;
     targetInterface private target;
     address private owner;
 
     constructor(address targetAddress_) {
-        targetAddress = targetAddress_;
         target = targetInterface(targetAddress_);
         owner = msg.sender;
     }

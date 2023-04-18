@@ -13,8 +13,6 @@ describe("Fallout Attack", async function () {
       value: ethers.utils.parseEther("1"),
     });
 
-    console.log("fallout address", fallout.address);
-
     // Deploy the falloutAttacker smart contract and fund it 1 ETH
     const FalloutAttacker = await ethers.getContractFactory("FalloutAttacker");
     const falloutAttacker = await FalloutAttacker.deploy(fallout.address);

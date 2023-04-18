@@ -13,8 +13,6 @@ describe("Fallback Attack", async function () {
       value: ethers.utils.parseEther("1"),
     });
 
-    console.log("fallback address", fallback.address);
-
     // Deploy the fallbackAttacker smart contract and fund it 1 ETH
     const FallbackAttacker = await ethers.getContractFactory(
       "FallbackAttacker"
