@@ -24,7 +24,7 @@ describe("Fallout Attack", async function () {
     });
 
     // Perform attack
-    falloutAttacker.attack();
+    await falloutAttacker.attack();
 
     const falloutBalance = await ethers.provider.getBalance(fallout.address);
     expect(falloutBalance).to.equal("0");
