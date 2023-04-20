@@ -10,6 +10,6 @@ amount of tokens.
 ## Command Sequence
 
 ```
-> await contract.transfer(""0x0000000000000000000000000000000000000000", 21)
+> await contract.transfer("0x0000000000000000000000000000000000000000", 21)
 get maximum amount of tokens
 ```
