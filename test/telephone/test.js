@@ -3,8 +3,6 @@ const { ethers } = require("hardhat");
 
 describe("Telephone Attack", async function () {
   it("should have changed owner", async function () {
-    const accounts = await ethers.getSigners();
-
     // Deploy the telephone smart contract
     const Telephone = await ethers.getContractFactory("Telephone");
     const telephone = await Telephone.deploy();

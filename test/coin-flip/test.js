@@ -3,8 +3,6 @@ const { ethers } = require("hardhat");
 
 describe("CoinFlip Attack", async function () {
   it("should have 10 consecutive wins", async function () {
-    const accounts = await ethers.getSigners();
-
     // Deploy the coinFlip smart contract
     const CoinFlip = await ethers.getContractFactory("CoinFlip");
     const coinFlip = await CoinFlip.deploy();

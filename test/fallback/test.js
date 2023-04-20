@@ -24,7 +24,7 @@ describe("Fallback Attack", async function () {
     });
 
     // Perform attack
-    fallbackAttacker.attack();
+    await fallbackAttacker.attack();
 
     const fallbackBalance = await ethers.provider.getBalance(fallback.address);
     expect(fallbackBalance).to.equal("0");
