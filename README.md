@@ -2,6 +2,8 @@
 
 Hello! In this repo you can checkout my solutions to the [Ethernaut CTF challenges](https://ethernaut.openzeppelin.com/).
 
+My address is `0xcb0e6F3a6F65c2360bD4324f747859E780bd8FB3` and I solved them in the sepolia network.
+
 ## Challenges
 
 1. [Fallback](contracts/fallback)
