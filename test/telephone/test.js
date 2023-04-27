@@ -7,24 +7,26 @@ describe("Telephone Attack", async function () {
     const Telephone = await ethers.getContractFactory("Telephone");
     const telephone = await Telephone.deploy();
 
-    // Deploy the relay smart contract
-    const Relay = await ethers.getContractFactory("Relay");
-    const relay = await Relay.deploy();
+    // Deploy the telephoneRelay smart contract
+    const TelephoneRelay = await ethers.getContractFactory("TelephoneRelay");
+    const telephoneRelay = await TelephoneRelay.deploy();
 
     // Deploy the telephoneAttacker smart contract
     const TelephoneAttacker = await ethers.getContractFactory(
       "TelephoneAttacker"
     );
-    const telephoneAttacker = await TelephoneAttacker.deploy(relay.address);
+    const telephoneAttacker = await TelephoneAttacker.deploy(
+      telephoneRelay.address
+    );
 
     // Owner address before attack is different from after the attack
     const initialOwner = await telephone.owner();
-    expect(initialOwner).to.not.equal(relay.address);
+    expect(initialOwner).to.not.equal(telephoneRelay.address);
 
     // Perform attack
     await telephoneAttacker.attack(telephone.address);
 
     const finalOwner = await telephone.owner();
-    expect(finalOwner).to.equal(relay.address);
+    expect(finalOwner).to.equal(telephoneRelay.address);
   });
 });
